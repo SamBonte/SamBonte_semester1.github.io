@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="styles/style.css" media="print"> <!--deze = als afgeprint bv. foto's niet afgeprint/in grijstinten-->
+    <link rel="stylesheet" href="styles/style.css"> <!--deze opmaak voor het scherm-->
+    <!--Style Block-->
+    <!--font-size: 20px -> nooit = absolute toekenning-->
+    <!--<style>
+    h1 {
+        color:blue;
+    }
+    p {
+        font-size: 2em;
+
+    }
+    </style>
+    -->
+</head>
+<body>
+<!--Inline style NOOIT GEBRUIKEN-->
+<!--in attribuut zelf aanpassen = qua onderhoud zeer slecht, spagetthi programmeren
+<h1 style="color:red">Cursus CSS</h1>-->
+<!--Style Block-->
+
+<h1>Cursus CSS</h1> <!--als via inline zou doen, elke [h1] manueel aanpassen--><!--Cursus CSS in rood-->
+<h2>Geschiedenis</h2><!--in blauw-->
+<h1 class="styleJBlue">Cursus HTML</h1><!--in blauw-->
+<h1 class="styleJBlue">Cursus JS</h1> <!--JS = javascript-->
+<h1 id="opmaak">Java</h1>
+<h1 id="opmaak"> C#</h1>
+<p>CSS is ontstaan in 1996</p>
+
+<section>
+    <spam>
+    <h1 class="styleGreen"> NET </h1> <!--Deze h1 moet groen zijn => manier 1 = via class .styleGreen-->
+    <!--h1 heeft als voorouder/valt onder section !!!-->
+    </spam>
+</section>
+
+</body>
+</html>

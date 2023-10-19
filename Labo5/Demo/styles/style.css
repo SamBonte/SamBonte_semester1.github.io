@@ -1,0 +1,35 @@
+/* h1 hoeft niet tssn haakjes [<>] in css, hij weet zelf dat het over de opmaak gaat van een element  */
+/*we willen h2 "Geschiedenis" van index ook in blauw -> */
+h1, h2 { /*via komma zeg je h1 EN h2 moeten blauw zijn*/ /*h1 roept elementen aan*/
+    color:red;
+}
+section>spam>h1{ /* alle h1's onder een section valt moet je h1 een groene kleur geven = manier  2  */
+                /*section moet een kind zijn/onmiddelijk onder sedtion en h1 moet een kind zijn van spam !!!*/
+    color: green;
+    font-size: 5em;
+}
+article h1{ /* h1 moet onder article vallen => werkt niet*/
+    color: green;
+}
+/*
+h2 {
+    color:blue
+}
+
+*/
+/*OPL h1 blauw en cursus HTML en Cursus JS in rood ? => via klasse*/
+/* Class */
+.styleJBlue{
+    color:blue;
+    font-size: 4em;
+} /*altijd klasse css begint met punt
+    -zelf klasse gedefinieerd*/
+.styleGreen{
+    color: green;
+}
+
+
+/* ID */
+#opmaak{
+    color: yellow;
+}
