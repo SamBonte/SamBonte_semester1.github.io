@@ -1,0 +1,30 @@
+body { /**/
+    background-color: yellow;
+    font-size: 3em;
+}
+/*element selctor*/
+h1{ /*margin-top: Opx;*/
+    background-color: red;
+    font-size: 4em;
+}
+/*pseudo-element selector*/
+p {
+    background-color: aqua;
+}
+p:first-letter{ /*opmaak geldt enkel voor eerste letter van de paragraaf*/
+    font-size: 5em;
+    color: red;
+}
+/*p: first_line{
+    text-decoration: underline; /*enkel eerste regel van een paragraaf onderlijnen
+}*/
+/*pseudo-class selector*/ /*op basis van een gedrag opmaak voorzien*/
+a:link{
+    text-decoration: none;
+} /*als je hovert over een hyperlink wil je het onderlijnt hebben*/
+li>a:hover { /*selecteer de hyperlinks, maar de hyperlinks moeten een KIND zijn van li*/
+    text-decoration: underline;
+}
+li:nth-child(2n+1) { /*selecteer li, en alle oneen elementen moeten een blauwe kleur hebben = bv. alle even lijnen grijs alle oneven lijnen wit*/
+    color: blue;
+}

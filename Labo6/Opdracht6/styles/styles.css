@@ -1,0 +1,8 @@
+.checked{
+    line-height: 1.5em;
+    list-style-image: url(http://localhost:63342/SamBonte.github.io/Labo6/Opdracht6/images/check-box-4-16.png);
+}
+ul{
+    line-height: 1.5em;
+    list-style-image: url(http://localhost:63342/SamBonte.github.io/Labo6/Opdracht6/images/check-box-2-16.png);
+}

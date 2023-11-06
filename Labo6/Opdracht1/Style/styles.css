@@ -1,0 +1,14 @@
+.menuitem {
+    display:inline-block;
+    width:150px;
+}
+.menuitem.HasLink > a {
+    color:red;
+}
+
+/*
+ul > li > a{
+    display:inline-block;
+    width:150px;
+    color:red;
+}*/

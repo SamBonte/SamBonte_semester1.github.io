@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 0px;
+            font-size: 5em;
+            border: 2px solid red;
+            width: 90%; /*breedte bv. 1000 en je mag er maar 50% van nemen*/
+            margin-left: auto;
+            margin-right: auto;
+            /*border padding en margin -> NEVER doorgegeven aan de children*/
+        }
+        h1 {
+            background-color: red;
+            width: 150px;
+            border: 5px solid black;
+           /* padding-left: 20px; <!---->
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;*/
+            padding: 20px; /*gwn padding is hetzelfde als */ /*eerst 20px voor de top,dan rechts dan bottom en als laatste left*/
+            padding: 20px 50px 40px 100px; /*verschillende waardes 1 = top, 2 = right, 3 = bottom, 4 = left*/
+            padding: 50px 100px; /*eerste voor de top EN de bottom en de tweede voor left EN right*/
+
+            /*margin-left: 200px; /*wat valt op van kleur -> neemt kleur over van parent, margin = transparant NEEMT NIET HET KLEUR OVER VAN ELEMENT*/
+            /*margin-top: 0px;/*padding daarentegen neemt WEL het kleur van het element over !!!*/
+            margin-left: auto; /*ka*/
+            margin-right: auto;
+        }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        p {
+            background-color: blue;
+        }
+
+      </style>
+</head>
+<body>
+<h1>VIVES <!--lsjfslfjzoefjzoijzofjzoifjozejfjoszfjzosjzoozfjzofjz--></h1>
+<img src="images/3q.webp" alt="afbeelding kasteel"/>
+
+<p>Vives heeft verschillende campussen</p>
+
+</body>
+</html>
