@@ -1,0 +1,13 @@
+header.hoofd h1 { /*s = 0012 => 0 uit style attribuut, 0 id attributen, 1 class en 2 gebruikte elementen*/
+    color: gray;
+}
+
+header h1 {color: beige} /*s = 0002 (cursus pg. 32*/
+
+h1 { /*specifiteit s = 0001*/
+    color: red;
+}
+h1 { /*s = 0001*/
+    color: blue;
+}
+/*wat betekent bovenstaande concreet ? => Bij conflict laatste die wint*/

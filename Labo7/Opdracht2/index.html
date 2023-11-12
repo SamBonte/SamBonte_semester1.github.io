@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vrienden</title>
+    <link rel="stylesheet" href="table_design/style/style.css">
+</head>
+<body>
+<div class="datagrid">
+<table border="1px"> <!-- dit is opmaak GEEN structuur-->
+    <!--Border laat ik staan voor overzicht-->
+    <thead>
+    <tr>  <!-- table row -->
+        <th>Voornaam</th> <!-- hoofdkolom, table head "th" -->
+        <th>Familienaam</th>
+        <th>Email</th>
+        <th>Lust Koffie ?</th>
+        <th>Games ?</th>
+        <th>Huisdieren</th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>  <!-- colspan voegt cellen samen -->
+        <td>Sam </td> <!-- table data in de cellen; maak een rij aan en maak drie cellen -->
+        <td>Bonte</td>
+        <td>sambonte@student.vives.be</td>
+        <td>Nee</td>
+        <td>Elden Ring</td>
+        <td>Geen</td>
+    </tr>
+    <tr  class="alt">
+        <td>Heleen </td>
+        <td>Bonte</td>
+        <td>heleenbonte@student.vives.be</td>
+        <td>Nee</td>
+        <td>Pokémon emulator</td>
+        <td>???</td>
+    </tr>
+    <tr>
+        <td>Xander </td>
+        <td>Bazijn</td>
+        <td>xanderbazijn@student.vives.be</td>
+        <td>Ja</td>
+        <td>Pokémon Ultralite</td>
+        <td>???</td>
+    </tr>
+    <tr class="alt">
+        <td>Will </td>
+        <td>Smith</td>
+        <td>willsmith@gmail.com</td>
+        <td>Ja</td>
+        <td>Beat Saber</td>
+        <td>Hond</td>
+    </tr>
+    <tr>
+        <td>John </td>
+        <td>Lennon</td>
+        <td>johnlennon@gmail.com</td>
+        <td>Ja</td>
+        <td>Clash Royal</td>
+        <td>Kat</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="6"><div id="no-paging">&nbsp;</div>
+    </tr>
+    </tfoot>
+</table>
+</div>
+</body>
+</html>

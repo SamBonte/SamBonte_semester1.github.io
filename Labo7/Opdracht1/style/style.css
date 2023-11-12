@@ -1,0 +1,51 @@
+body {
+    margin: auto;
+    background-color: #EDF2F4;
+    width: 95%;
+    height: 450px;
+    font-family: Verdana;
+}
+section>header>h1 {
+    margin: 0px;
+    padding-left: 5px;
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.banner {
+    background-image: url(../images_nature_blog/header.jpg);
+}
+
+#bannertekst {
+    color: white;
+    font-size: 3em;
+
+}
+
+.linksbanner {
+    color: #00fc61;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+#bannerbackground {
+    background-color: dimgrey;
+    margin: 0px;
+}
+
+.article {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.articlebackground {
+    background-color: rgb(225, 224, 224);
+    margin: 5px;
+    padding: 3px;
+}

@@ -1,0 +1,15 @@
+body{ /*een block element, neemt volledige breedte in*/
+    margin: 0px; /*standaard is de default 8px MAAR als werkgever wil pg. helemaal tot boven => overrulen */
+    background-color: #EDF2F4;
+    width: 90%; /*begint links*/
+    margin-left: auto; /*margin die wij op nul gezet hadden Left = auto*/
+    margin-right: auto;/*margin right nu op auto*/
+}
+
+header {
+    height: 400px;
+}
+
+header h1 {
+    margin: 0px;
+    color: red}

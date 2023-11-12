@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    background-color: #EDF2F4;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 450px;
+    background-image: url(../images/header.jpg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat; /*vermijd dat image herhaald wordt om block op te vullen = lelijk*/
+    /*background-repeat: repeat-y; /*image zal ENKEL verticaal op de y-as kopiëren*/
+    /*background-repeat: repeat-x; /*horizontaal*/
+    background-size: cover; /*responsive design zodat de gehele container gevuld wordt/ scaling*/
+}
+
+header h1 {
+    margin: 0px;
+    color: red;
+}
+
