@@ -1,0 +1,33 @@
+div {
+	text-align:center;
+	/*vertical-align: center; werkt niet*/
+	display: table-cell;
+
+}
+
+.area {
+	line-height: 100px;
+	width:100px;
+	height:100px;
+	background:red;
+	display:inline-block;
+}
+
+.tall {
+	height:150px;
+
+}
+
+.short {
+	height:50px;
+}
+
+.floaty{
+	float:left;
+	background:green;
+}
+
+.break {
+	clear:both;
+	background:blue;
+}

@@ -1,0 +1,56 @@
+body {
+    background-color: Silver;
+    margin:0px; /*ALTIJD doen margin en padding 0px -> overrulen*/
+    padding: 0px;
+}
+#wrapper{ /*pagina centreren*/ /*stap 1*/
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+header img { /*margin lukt NIET op inline element !!! Dus van img een blok element maken*/ /*stap2*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    float: left;
+    width:20%;
+    background-color:white;
+    height: 200px;
+}
+nav a {
+    text-decoration: none; /*hyperlinks niet meer onderlijenen*/
+}
+nav li {
+    list-style: none; /*opsommingstekens weg*/
+}
+
+section#midden { /*id = die bepaalde opmaak mag enkel toegepast worden */
+    float: left;
+    background-color: maroon;
+    width: 80%;
+    padding: 10px; /*probleem padding zorgt ervoor dat width meer dan 80% --> 80+2+2+10+10 padding/border beide kanten
+    */
+    height: 200px;
+    border: 2px solid black;
+    box-sizing: border-box; /*die gaat voor jou */
+
+}
+footer {
+    clear:both;
+    width:100%;
+    text-align: center;
+    background-color:green;
+    height: 120px;
+}
+/*span, a, img -> always inline element => veranderen ? display block*/
+.breedte { /*bij inline element heeft width GEEN betekenis -> Hoe wel doen ?
+            HEEFT de margin en padding enkel invloed op horizontaal niveau*/
+    display: inline-block; /*geen nieuwe regel MAAR al de rest wel als block gedragen*/
+    width: 400px;
+    background-color: green;
+    margin: 200px;/*gaat hij als je inline-block niet doet niet top en bottom doen*/
+    padding: 100px; /*top,right, bottom, left*/
+}
+

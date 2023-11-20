@@ -1,0 +1,32 @@
+body {
+   margin: 10px;
+}
+
+article {
+    display: inline;
+}
+/*de width:49.5% werkt ongeveer, maar waarschijnlijk niet de correcte oplossing -> vragen meneer*/
+.section_1 {
+    float: left;
+    display: inline-block;
+    border: 1px;
+    border: solid;
+    border-color: black;
+    padding: 10px;
+    height: auto;
+    width: 49.5%;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.section_2 {
+    display: inline-block;
+    border: 1px;
+    border: solid;
+    border-color: black;
+    padding: 10px;
+    width: 49.5%;
+    height: auto;
+    margin-left: 5px;
+    box-sizing: border-box;
+}

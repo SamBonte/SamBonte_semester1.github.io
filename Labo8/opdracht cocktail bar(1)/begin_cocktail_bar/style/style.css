@@ -1,0 +1,127 @@
+/*basics*/
+body {
+    background-color: white;
+    margin:0px; /*ALTIJD doen margin en padding 0px -> overrulen*/
+    padding: 0px;
+}
+#wrapper{ /*pagina centreren*/ /*stap 1*/
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+a {
+    color: black;
+}
+header img { /*margin lukt NIET op inline element !!! Dus van img een blok element maken*/ /*stap2*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*color + font-size*/
+h1, h2 {
+    color: rgb(0,126,126); /*=RGB 007e7e*/
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 130%;
+}
+h1#id_h1  {
+    color: darkslateblue;
+}
+h2.class_h2 {
+    color: rgba(246, 42, 42, 0.77);
+}
+a:hover#hover_link_weekly {
+   background-color: rgba(169, 100, 70, 0.83);
+    /*ervan uitgaande dat dit de background moet zijn
+        anders gwn color: saddlebrown*/
+}
+a:hover.decoration_link {
+    color: crimson;
+    text-decoration: none;
+    background-color: #f1e6e6;
+
+}
+/*positioning*/
+section>article {
+    width: 70%;
+}
+.position_right {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.border_right {
+    border-color: rgb(167,206,206);
+    border-style: solid;
+    background-image: url(../images/cocktail.gif);
+    background-repeat: repeat-x;
+}
+/*.background_right { /*doesn't work properly yet*
+    background-image: url('../images/cocktail.gif');
+    background: repeat-x;
+    background-size: cover;
+}*/
+.paragraph_left {
+    /*float: left;*/
+    margin: 30px;
+    /*padding: 20px;*/
+    padding: 30px 70px;
+
+    color: rgb(68,68,68);
+    background-color: rgb(167,206,206);
+    border-style: dashed;
+    border-color: white;
+}
+.background_paragraph_left { /*doesn't function yet with no-repeat)*/
+    background-image: url(../images/background.gif);
+    background-repeat: no-repeat;
+
+}
+
+
+body>article {
+    float: left;
+    width: 25%;
+    height: 200px;
+    font-family: 'Verdana';
+    font-size: 1.2em;
+}
+
+.article_paragraph{
+    float: right;
+    width: 25%;
+    clear: both;
+
+}
+
+
+article#midden { /*id = die bepaalde opmaak mag enkel toegepast worden */
+    float: left;
+    background-image: url(../images/background.gif);
+    width: 80%;
+    padding: 10px; /*probleem padding zorgt ervoor dat width meer dan 80% --> 80+2+2+10+10 padding/border beide kanten
+    */
+    height: 200px;
+    border: 2px solid black;
+    box-sizing: border-box; /*die gaat voor jou */
+
+}
+/*style list items*/
+#id_list_item {
+    font-style: italic;
+}
+#id_list_item_normal {
+    font-style: normal;
+}
+
+footer {
+    clear:both;
+    width:100%;
+    text-align: center;
+    font-size: 8px; /*default was 16px*/
+    height: 120px;
+}
