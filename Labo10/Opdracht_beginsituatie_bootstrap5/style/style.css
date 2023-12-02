@@ -1,0 +1,27 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+}
+
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light {
+    min-height: 150px;
+    background-color: rgba(236, 236, 236, 0.6);
+    border: solid white 10px;
+
+}
+
+.dark {
+    min-height: 150px;
+    background-color: rgba(204, 203, 203, 0.6);
+    border: solid white 10px;
+}
+
+
+

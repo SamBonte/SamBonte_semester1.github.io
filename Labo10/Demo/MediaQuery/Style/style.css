@@ -1,0 +1,53 @@
+body{/*https://codeshare.io/*/
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    margin: 0px;
+}
+header {
+
+    text-align:center;
+    background-color:lightsteelblue;
+}
+
+#left {
+    background-color:lightblue;
+    float: left;
+    width: 75%;
+    min-height: 200px;
+}
+
+#right {
+    background-color:lightcoral;
+    float: left;
+    width: 25%;
+    min-height: 200px;
+}
+
+footer {
+
+    text-align:center;
+    background-color:lightgreen;
+}
+/*checkt of schermpje kleiner of = 768px en voert daarna aparte opmaak uit*/
+@media screen and (max-width: 768px) {
+    /*typische groote gsm, ipad enz. */
+    /*enkel defini*/
+    #left { /*overruled enkel background kleur en width DE REST BLIJFT BEHOUDEN !!*/
+        width: 100%;
+        background-color: yellowgreen;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    footer {
+        display: none; /*trucje om footer niet te tonen op schermen van 768px ofzo*/
+    }
+}

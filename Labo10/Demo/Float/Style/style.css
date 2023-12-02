@@ -1,0 +1,38 @@
+---------style ------
+body{https://codeshare.io/
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    margin: 0px;
+}
+header {
+
+    text-align:center;
+    background-color:lightsteelblue;
+}
+
+#left {/*element zal hij laten zweven links*/
+    background-color:lightblue;
+    float: left;
+    width: 75%; /*breedte van scherm in te nemen: 75 van de 100%*/
+    min-height: 200px;
+}
+
+#right {
+    background-color:lightcoral;
+    float: left;
+    width: 25%;
+    min-height: 200px;
+}
+
+footer {
+
+    text-align:center;
+    background-color:lightgreen;
+    clear: both;
+}

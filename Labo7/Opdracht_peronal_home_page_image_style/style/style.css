@@ -4,9 +4,11 @@ body {
     width: 95%;
     height: 450px;
     font-family: Verdana;
+    max-height: 100%;
 }
 article>header>h1 {
     margin: 0px;
+    padding-top: 10px;
     padding-left: 5px;
     height: 95px;
     background-repeat: no-repeat;
@@ -17,11 +19,13 @@ article>header>h1 {
 
 .bannerSam {
     background-image: url(../images/elden-ring.jpeg);
+    height: 150px;
 }
 
 #bannertekstSam {
     color: white;
     font-size: 3em;
+    text-align: center;
 
 }
 
@@ -46,9 +50,69 @@ section {
     background-color: rgba(204, 204, 204, 0.6);
     margin: 5px;
     padding: 3px;
+
+}
+table, th, td {
+    border: 1px solid;
+    width: 100%;
 }
 
 .image_style {
     margin: 5px;
     padding-left: 1.2em;
+}
+.vrienden_table{
+
+}
+.favourite_animals {}
+#lion {
+    display: inline-block;
+    background: black;
+    border-radius: 5px;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+
+
+}
+
+#capibara {
+    background: black;
+    border-radius: 5px;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+#golden_retriever {
+    background: black;
+    border-radius: 5px;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+img {
+    max-width: 100%;
+}
+.goofy {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .vrienden_table{
+        display: none;
+    }
 }
