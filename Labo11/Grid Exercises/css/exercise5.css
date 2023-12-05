@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.container .block{
+    padding:20px;
+    color: white;
+    font-size: 4em;
+    font-weight:bold;
+    text-align:center;
+}
+
+.block.block1{
+    grid-area: 1/1/2/4;
+    background: darkred;
+ }
+.block.block2{
+    grid-area: 2/1/4/2;
+    background: mediumpurple;
+}
+.block.block3{
+    grid-area: 2/2/3/3;
+    background: cornflowerblue;
+}
+.block.block4{
+    grid-area: 2/3/3/4;
+    background: cyan;
+}
+.block.block5{
+    grid-area: 3/2/4/4;
+    background: plum;
+}
+.block.block6{
+    grid-area: 4/1/5/3;
+    background: darkred;
+}
+.block.block7{
+    grid-area: 4/3/5/4;
+    background: rebeccapurple;
+}
+.block.block8{
+    grid-area: 5/1/6/4;
+    background: darkslateblue;
+}

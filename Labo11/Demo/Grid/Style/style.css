@@ -1,0 +1,87 @@
+/* items */
+
+section div {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+    border: 10px solid white;/*om witte rand te krijgen*/
+
+}
+
+/* specific item styles */
+
+.item-1 {
+    background: #b03532;
+}
+.item-2 {
+    background: #33a8a5;
+}
+.item-3 {
+    background: #30997a;
+}
+.item-4 {
+    background: #6a478f;
+}
+.item-5 {
+    background: #da6f2b;
+}
+.item-6 {
+    background: #3d8bb1;
+}
+.item-7 {
+    background: #e03f3f;
+}
+.item-8 {
+    background: #59a627;
+}
+.item-9 {
+    background: #4464a1;
+}
+section {
+    /*raster maken, dan hoeveel kolommen en hoeveel rijen*/
+    display: grid;; /*maakt een grid container en al uw elementen die daar onder vallen
+    worden raster elementen*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /*zelfde als grid-template-columns : 25% 50% 25%*/
+    /*1/4 3/4 1/4*/
+    /*DUS middelste kolom dubbel zo breedt als de linkse en rechtse*/
+  /*  grid-template-rows: auto auto auto;*/
+    grid-template-rows: 1fr 3fr 1fr;
+    /*1/5 3/5 1/5*/
+    /*Nu is een raster gedefiniêerd met 3 kolommen en 3 rijen */
+    grid-gap: 20px;/*plaats tussen 2 cellen*/
+}
+
+@media screen and (max-width: 760px) {
+    /*als scherm kleiner of gelijk aan dan 760 doe onderstaande*/
+
+    /**/
+    section {
+        /*NIET zetten display: grid want dit is al gedef.*/
+        /*in media query schrijven die afwijken, herdefiniêren van zaken*/
+        grid-template-columns: 1fr 1fr;
+        /*grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr
+        maar korter is onderstaande*/
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    .item-1 {
+        /*element 1*/
+        grid-area: 6/1/7/3;
+        /*begin kolom, einde rij, einde kolom, begin rij */
+    }
+
+    .item-3 {
+        grid-area: 4/1/5/3;
+    }
+
+    .item-6 {
+        grid-area: 5/1/6/3;
+    }
+
+    .item-9 {
+        grid-area: 1/1/2/2;
+    }
+
+}
