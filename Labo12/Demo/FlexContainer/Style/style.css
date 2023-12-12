@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightskyblue;
+    font-family: Chalkboard, sans-serif;
+}
+
+h1 {text-align: center;}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+
+.border {border: 2px solid black;}
+
+
+/* Start instellingen FlexBox */
+section {
+    background: coral;
+    height: 500px;
+    display: flex;
+
+    /*flex-direction: column; om items verticaal te plaatsen achter elkaar*/
+    /*flex-direction: row-reverse;/elementen in omgekeerde volgorde in container gestoken(van achter naar voor)*/
+    /*flex-wrap: wrap;/*geen plts in container, dan ga je op elkaar staan*/
+    justify-content: space-around;/*flex-start/flex-end/center/space-between/space-evenlyu*/
+    /*align-items: flex-end;*/
+}
+.grey-box{
+    background: grey;
+    width: 100%;
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 2em;
+}
