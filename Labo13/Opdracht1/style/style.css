@@ -1,0 +1,16 @@
+body {
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+
+#greenBlock {
+    width: 500px;
+    height: 300px;
+    background-color: darkseagreen;
+
+    position: absolute;
+    left: calc(50% - (500px/2));/*x-as*//*OPM altijd spaties tssn getal en som/min teken anders ziet ie het niet als operator*/
+    /* centreer horizontaal */
+
+
+}
